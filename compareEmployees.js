@@ -16,19 +16,19 @@ const employee2 = {
 // Function to compare employees
 function compareEmployees(emp1, emp2) {
     if (emp1.companies.length > emp2.companies.length) {
-        console.log(`${emp1.name} has worked in more companies.`);
+        console.log("${emp1.name} has worked in more companies.");
     } else if (emp1.companies.length < emp2.companies.length) {
-        console.log(`${emp2.name} has worked in more companies.`);
+        console.log("${emp2.name} has worked in more companies.");
     } else {
-        console.log(`Both ${emp1.name} and ${emp2.name} have worked in the same number of companies.`);
+        console.log("Both ${emp1.name} and ${emp2.name} have worked in the same number of companies.");
     }
     
-    console.log(`Full list of companies ${emp1.name} has worked in:`);
+    console.log("Full list of companies ${emp1.name} has worked in:");
     for (let company of emp1.companies) {
         console.log(company);
     }
 
-    console.log(`Full list of companies ${emp2.name} has worked in:`);
+    console.log("Full list of companies ${emp2.name} has worked in:");
     for (let company of emp2.companies) {
         console.log(company);
     }
